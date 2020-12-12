@@ -13,7 +13,7 @@ def upload_file():
 
 @app.route('/predict', methods=['GET','POST'])
 def predict():
-    if request.method == 'POST':
+    if request.method == 'GET':
         file = request.files['file']
         img_bytes = file.read()
         class_name = get_prediction(image_bytes=img_bytes)
