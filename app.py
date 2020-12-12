@@ -11,7 +11,7 @@ app = Flask(__name__)
 def upload_file():
     return render_template('index.html')
 
-@app.route('/klasifikasi-restoran.herokuapp.com/predict', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
         file = request.files['file']
