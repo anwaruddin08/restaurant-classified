@@ -8,12 +8,12 @@ from commons import format_class_name
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
-def upload_file():
+def home():
     return render_template('index.html')
 
 @app.route('/predict', methods=['GET','POST'])
 def predict():
-    if request.method == 'GET':
+    if request.method == 'POST':
         file = request.files['file']
         img_bytes = file.read()
         class_name = get_prediction(image_bytes=img_bytes)
