@@ -26,12 +26,14 @@
             });
             });
         </script>
-        <title>Image Classification</title>
+        <title>Klasifikasi Restoran</title>
     </head>
     <body>
         <main class="main_full">
             <div class="container">
-                <h1>Image Classification</h1>
+                <h1>Klasifikasi Restoran</h1>
+                <hr>
+                <h2>[KFC] [McDonald] [Starbucks]</h2>
                 <div class="panel">
                     <div class="button_outer">
                         <div class="btn_upload">
@@ -46,6 +48,7 @@
                 <div class="uploaded_file_view" id="uploaded_view">
                     <!-- <img id="imageData" src="#" alt="your image"> -->
                     <span class="file_remove">X</span>
+                    <h3>Sepertinya ini</h3>
                     <h2 id="classText"></h2>
                 </div>
             </div>
@@ -220,7 +223,8 @@
         h1 {
             color: #111;
             font-family: 'Helvetica Neue', sans-serif;
-            font-size: 80px;
+            font-size: 70px;
+            padding:20px;
             font-weight: bold;
             letter-spacing: -1px;
             line-height: 1;
@@ -234,6 +238,7 @@
             font-weight: 300;
             line-height: 32px;
             margin: 0 0 72px;
+            padding:10px;
             text-align: center;
         }
 
