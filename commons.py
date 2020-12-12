@@ -13,7 +13,7 @@ def get_model():
 
 
 def transform_image(image_bytes):
-   transforms.Compose([
+     my_transforms = transforms.Compose([
         transforms.Resize(200),          
         transforms.CenterCrop(300),
         transforms.ToTensor(),
